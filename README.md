@@ -1,4 +1,3 @@
-````md
 # AI Tutor  
 **Next.js · TypeScript · Docker**
 
