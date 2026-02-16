@@ -103,4 +103,8 @@ export async function POST(req: Request) {
     const msg = err?.message ? String(err.message) : "Server error";
     return NextResponse.json({ answer: msg }, { status: 500 });
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 60cb10f079786a19986728cefd4bc3944a735e00

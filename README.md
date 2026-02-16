@@ -1,4 +1,3 @@
-````md
 # AI Tutor  
 **Next.js · TypeScript · Docker**
 
@@ -40,14 +39,12 @@ cp .env.example .env.local
 ### 2️⃣ Start Docker container
 
 ```bash
-docker volume create titanom_node_modules
-
-docker run --rm -it \
-  -p 3000:3000 \
-  -v "$PWD":/app \
-  -v titanom_node_modules:/app/node_modules \
-  -w /app \
-  --env-file .env.local \
+docker run --rm -it `
+  -p 3000:3000 `
+  -v ${PWD}:/app `
+  -v titanom_node_modules:/app/node_modules `
+  -w /app `
+  --env-file .env.local `
   node:24-alpine sh
 ```
 
